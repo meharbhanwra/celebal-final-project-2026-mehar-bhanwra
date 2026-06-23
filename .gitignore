@@ -1,0 +1,52 @@
+# Python
+
+**pycache**/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+
+venv/
+.env/
+.env.*
+
+# Jupyter
+
+.ipynb_checkpoints/
+
+# VS Code
+
+.vscode/
+
+# Data
+
+data/eurosat/
+data/ucmerced/
+data/processed/
+
+# Models
+
+checkpoints/
+models/
+*.pt
+*.pth
+*.ckpt
+
+# Outputs
+
+outputs/
+runs/
+
+# Logs
+
+*.log
+
+# OS files
+
+.DS_Store
+Thumbs.db
+
+# Streamlit
+
+.streamlit/secrets.toml
