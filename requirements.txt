@@ -13,3 +13,4 @@ streamlit
 timm
 tqdm
 pillow
+notebook
