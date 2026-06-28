@@ -9,7 +9,7 @@ This project implements an end-to-end remote sensing pipeline for **satellite la
 ## Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/meharbhanwra/celebal-final-project-2026-mehar-bhanwra.git
 cd satellite-project
 ```
 
@@ -27,6 +27,9 @@ conda activate satellite
 ```bash
 pip install -r requirements.txt
 ```
+## Run Each Notebook
+
+Run every notebook in the order they are given in. 
 
 ## Launch the Streamlit Dashboard
 
@@ -199,28 +202,26 @@ Features:
 # Project Structure
 
 ```text
-app/
 │
-├── app.py
-├── inference.py
-├── feature_extractor.py
-└── preprocessing.py
-
-checkpoints/
-
-data/
-├── raw/
-├── processed/
-
-notebooks/
-
-outputs/
-
-requirements.txt
-README.md
-```
-
----
+├── app/
+├── checkpoints/
+├── data/
+│ ├── eurosat/
+│ ├── ucmerced/
+│ └── processed/
+├── notebooks/
+├── outputs/
+│ ├── change_detection/
+│ ├── confusion matrices/
+│ ├── error_analysis/
+│ └── figures/
+├── src/
+│ ├── datasets/
+│ ├── models/
+│ ├── utils/
+├── tests/
+├── README.md
+└── requirements.txt
 
 # Technologies Used
 
