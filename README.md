@@ -27,9 +27,49 @@ conda activate satellite
 ```bash
 pip install -r requirements.txt
 ```
-## Run Each Notebook
+## Create Required Directory Structure
 
-Run every notebook in the order they are given in. 
+ ```text
+│
+├── app/
+├── checkpoints/
+├── data/
+│ ├── eurosat/
+│ ├── ucmerced/
+│ └── processed/
+├── notebooks/
+├── outputs/
+│ ├── change_detection/
+│ ├── confusion matrices/
+│ ├── error_analysis/
+│ └── figures/
+├── src/
+│ ├── datasets/
+│ ├── models/
+│ ├── utils/
+├── tests/
+├── README.md
+└── requirements.txt
+```
+Add EuroSAT and UC Merced Land Use Datasets to their respective folders. Run the notebooks in this exact order:
+  ```text
+  00_setup_check.ipynb
+  01_dataset_eda.ipynb
+  02_geospatial_check.ipynb
+  02_spatial_metadata.ipynb
+  03_spatial_split.ipynb
+  04_create_splits.ipynb
+  05_dataloaders.ipynb
+  06_baseline_cnn.ipynb
+  07_baseline_evaluation.ipynb
+  08_resnet18_frozen.ipynb
+  09_resnet18_finetuning_unfreezing.ipynb
+  10_ucmerced_holdout_evaluation.ipynb
+  11_random_split_experiment.ipynb
+  12_spatial_leakage_analysis.ipynb
+  13_temporal_change_detection.ipynb
+  14_error_analysis.ipynb
+```
 
 ## Launch the Streamlit Dashboard
 
