@@ -28,7 +28,6 @@ data/processed/
 # Models
 
 checkpoints/
-models/
 *.pt
 *.pth
 *.ckpt
